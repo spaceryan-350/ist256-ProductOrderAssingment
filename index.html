@@ -2,9 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Everything Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="product.css">
 </head>
 <body>
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <h1>Everything Tech</h1>
+        </div>
+    </div>
+</div>
 
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <h2>PCs</h2>
+            <div class="form-group">
+                <label>Type:
+                    <input type="radio" name="name" value="W"/> Windows
+                    <input type="radio" name="name" value="L"/> Linux
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">3</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Favorite Color:</label>
+                <select name="color">
+                    <option value="red">red</option>
+                    <option value="green" selected>green</option>
+                    <option value="BLUE">blue</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Consoles</h2>
+            <div class="form-group">
+                <label>Type:
+                    <input type="radio" name="name" value="X"/> Xbox
+                    <input type="radio" name="name" value="P"/> Playstation
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="ExtraController">
+                    <label class="form-check-label" for="inlineCheckbox1">Extra Controller</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Headset">
+                    <label class="form-check-label" for="inlineCheckbox2">Headset</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="ExternalHardDrive">
+                    <label class="form-check-label" for="inlineCheckbox3">External HardDrive</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Console Type:</label>
+                <select name="type">
+                    <option value="" SELECTED> </option>
+                    <option value="Slim">Slim</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Pro">Pro</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<div class="container">
+    <form action="" method="post" id="orderform">
+        <div class="row align-items-center">
+            <div class="col">
+                <label>First Name:
+                    <input type="text" name="firstName" value=""/>
+                </label>
+            </div>
+            <div class="col">
+                <label>Last Name:
+                    <input type="text" name="lastName" value=""/>
+                </label>
+            </div>
+            <div class="col">
+                <label>Email:
+                    <input type="email" name="email" value=""/>
+                </label>
+            </div>
+            <div class="col">
+                <label>Password:
+                    <input type="password" name="password" value="" minlength="8" maxlength="12"/>
+                </label>
+            </div>
+            <div class="col">
+                <label>Comment:
+                    <textarea name="comment"></textarea>
+                </label>
+            </div>
+        </div>
+        <div class="col">
+            <input type="submit" name="Submit" value="Submit">
+            <input type="reset" name="Reset" value="Reset">
+        </div>
+    </form>
+</div>
 </body>
 </html>
